@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For My Dipsi 💗</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;padding:22px 14px;min-height:100vh;
+ font-family:Georgia,serif;color:#642747;
+ background:linear-gradient(145deg,#ffe8f2,#ffc1dc,#f8dafa);
+ display:flex;justify-content:center;align-items:center
+}
+main{
+ width:100%;max-width:700px;background:#fffafd;
+ padding:25px;border-radius:25px;
+ box-shadow:0 12px 40px #a94c7833
+}
+.page{display:none;animation:fade .3s ease}
+.page.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+h1,h2{text-align:center;color:#c03979}
+h1{font-size:35px}
+h2{font-size:29px}
+.heart{text-align:center;font-size:35px}
+p,li{font-size:17px;line-height:1.8}
+button{
+ border:0;border-radius:30px;padding:13px 20px;
+ font-size:15px;font-weight:bold;cursor:pointer;margin:5px
+}
+.primary{background:#e94e94;color:white}
+.secondary{background:#ffe0ee;color:#963363}
+.controls{display:flex;justify-content:center;flex-wrap:wrap;margin-top:20px}
+.dots{text-align:center;color:#c03979;font-family:Arial,sans-serif;font-size:13px;margin-top:20px}
+.question{text-align:center;font-size:24px;color:#c03979}
+</style>
+</head>
+<body>
+<main>
+<section class="page active">
+<div class="heart">💗🌷💗</div>
+<h1>For My Bongali</h1>
+<p style="text-align:center">A little letter made just for you, Dipsi ❤️</p>
+<p>Bongali, I created this website just for you because tomorrow you will go to the hostel again, and I want you to know how much I love you.</p>
+<div class="controls"><button class="primary" onclick="showPage(1)">Open my letter 💌</button></div>
+</section>
+
+<section class="page">
+<div class="heart">🫶</div><h2>Our Story</h2>
+<p>I first met you in 2021—the year that taught me what real love feels like. We were both too young to realize it then, but we went through that phase together with so many arguments, beautiful memories, and endless ups and downs.</p>
+<p>We grew up together, learned what was best for us, and went through drastic changes in our lives. We drifted apart many times, but in the end, we always found our way back to each other. Life taught us hard lessons, and we made big mistakes without knowing where they would lead. But I want you to know that I love you deeply, and I want to spend the rest of my life with you.</p>
+<p>I am at a stage in life where I truly realize that my days feel incomplete without you. Maybe I could try to move on, but deep down, I will always want you by my side. No matter who came between us or what happened when we were apart, the only thing that matters to me now is living my present with you and building a strong, happy future together.</p>
+<p>No matter how hard life hits us, I will never leave your side again. You are still my 2021 Dipsi to me. Even when you're 80, in my eyes, you will always be that young Dipsikha from 2021 who made me feel special, taught me so much, and helped me see my mistakes.</p>
+<p>I love you so much, Dipsi. I can’t bear the pain of losing you ever again. I love you to the moon and back ❤️.</p>
+</section>
+
+<section class="page">
+<div class="heart">🎒🌸</div><h2>Before You Leave</h2>
+<p>Before you leave for the hostel, I also want you to know that building a beautiful future is just as important as being together. We both need to build a bright future to make our parents proud (tetiya h tuk mur le dibo nh).</p>
+<p>We are both young and still learning. We don't fully know what "life" means yet, so it is important for us to study hard to achieve our dreams together, help each other realize our mistakes, and grow side by side. Only then can we truly call ours a beautiful, successful, and healthy relationship.</p>
+<p>We both have a long way to go in life. We might get caught up in serious problems, and we might face situations where we feel like giving up on each other. But we should go through all those phases together. Loving each other isn't just about romantic talks or meeting every day—it's about how we treat each other at our lowest, right?</p>
+<p>I want us to remember this whenever we get into arguments. I hope we two young, learning souls reach the best versions of ourselves with each other by our side.</p>
+</section>
+
+<section class="page">
+<div class="heart">💌</div><h2>When You Miss Me</h2>
+<p>I know we will both miss each other. I just want you to know that whenever you miss me, just know that I am right by your side no matter what. I will wait for you forever. You don't need to worry about what I'm doing, because I'll be too busy missing you just as much as you miss me 😁.</p>
+<p>And don't forget your main reason for going to the hostel! I will always be there for you, no matter what. I loved you, I love you, and I will forever love you. You don't need to feel alone this time.</p>
+</section>
+
+<section class="page">
+<div class="heart">🥹❤️</div><h2>All the Little Things</h2>
+<p>And finally, this is the last paragraph. I think you might be getting bored reading this long, long letter! I’m sorry for that, but these paragraphs aren't enough to describe my love for you. I want you to know that these aren't just words—these are genuine feelings I have for you.</p>
+<p>We both know we can't live without each other; life just feels hard and difficult when we're apart. With you, I feel like a complete person.</p>
+<p>One thing I struggle with is having so much fear of losing you again. I know it’s normal, but that fear hits me suddenly, and I get overwhelmed by those thoughts. However, I will try my best to manage and overcome this fear, and I know you will help me through it.</p>
+<p>I love you completely, and here are a few things I want you to read:</p>
+<ol>
+<li>I love the way you smile.</li>
+<li>I love the way you get mad at me over little things.</li>
+<li>I love the way you are.</li>
+<li>I love how truthful you are.</li>
+<li>I love how you yell at me over minor things.</li>
+<li>I love the way you talk.</li>
+<li>I love your voice.</li>
+<li>I love how you act mature or childish at just the right times.</li>
+<li>I love the way you share things with me.</li>
+<li>The most important one: I love your eyes so much, especially that little black spot in your eye that makes them so beautiful 😭😭.</li>
+</ol>
+<p>I always want to see a smile in those eyes, not tears. No matter what, I will always stay the same Partha for you.</p>
+<p>One thing I really dislike is when you don't take care of yourself. You need to be careful with the little things—I hope you get that, right? Good girl.</p>
+<p>Tomorrow you will be moving away, and I want to tell you one last time that words and paragraphs are never enough to capture how much I love you. I will miss you so much, Dipsikha.</p>
+<p>That’s all—I am out of words, but never out of feelings. I want to enjoy every little moment of my life with you.</p>
+</section>
+
+<section class="page">
+<div class="heart">💖</div><h2>One Last Question</h2>
+<p class="question">Will you always be yourself for me, and will you stay by my side?</p>
+<p style="text-align:center">I love you, Dipsikha ❤️</p>
+<div class="controls"><button class="primary" onclick="showPage(0)">Read my letter again ↺</button></div>
+</section>
+
+<div class="controls" id="navigation">
+<button class="secondary" id="back" onclick="showPage(current-1)">← Back</button>
+<button class="primary" id="next" onclick="showPage(current+1)">Continue →</button>
+</div>
+<div class="dots" id="counter">Page 1 of 6 💗</div>
+</main>
+
+<script>
+let current=0;
+const pages=document.querySelectorAll(".page");
+function showPage(n){
+ current=Math.max(0,Math.min(n,pages.length-1));
+ pages.forEach((p,i)=>p.classList.toggle("active",i===current));
+ document.getElementById("back").style.display=current===0?"none":"inline-block";
+ document.getElementById("next").style.display=current===pages.length-1?"none":"inline-block";
+ document.getElementById("navigation").style.display=(current===0||current===pages.length-1)?"none":"flex";
+ document.getElementById("counter").textContent="Page "+(current+1)+" of "+pages.length+" 💗";
+ window.scrollTo(0,0);
+}
+showPage(0);
+</script>
+</body>
+</html>
