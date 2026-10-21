@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffe7f1">
+<title>A Little Place for Us 💗</title>
+<style>
+:root{--pink:#f56fa5;--deep:#a83e70;--cream:#fff9fc;--ink:#60364a;--rose:#ffd6e6;--line:#f4bfd5}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:ui-rounded,"Trebuchet MS",system-ui,sans-serif;color:var(--ink)}
+body{background:radial-gradient(circle at 15% 15%,#fff 0,transparent 32%),linear-gradient(150deg,#fff9fc,#ffe8f2 55%,#fce4f5);overflow:hidden}
+button{font:inherit;cursor:pointer}button:focus-visible,input:focus-visible{outline:3px solid #c84c85;outline-offset:3px}
+#floaties{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}#floaties span{position:absolute;bottom:-40px;opacity:.55;animation:floatUp linear infinite}
+@keyframes floatUp{to{transform:translateY(-115vh) rotate(35deg);opacity:0}}@keyframes appear{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}@keyframes pulse{50%{transform:scale(1.13)}}
+main{position:relative;z-index:1;min-height:100dvh;max-width:850px;margin:auto;padding:12px 16px calc(12px + env(safe-area-inset-bottom));display:flex;flex-direction:column}
+.progress{flex:none;text-align:center;color:#a85b7c;font-size:.82rem;letter-spacing:.04em;padding:7px 5px 12px}
+.screen{display:none;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;animation:appear .45s ease;padding:clamp(17px,4vw,34px);background:#ffffffd9;border:1px solid #fff;box-shadow:0 14px 45px #bd62851a;border-radius:27px;backdrop-filter:blur(8px)}
+.screen.active{display:flex;flex-direction:column}.screen.hero{background:transparent;border:0;box-shadow:none;text-align:center;align-items:center;justify-content:center;overflow-y:auto}.hero .heart{font-size:2.8rem;animation:pulse 1.6s infinite}.eyebrow{letter-spacing:.14em;text-transform:uppercase;font-size:.72rem;color:#b05b81}h1,h2{font-family:Georgia,serif;font-weight:500;color:#b9477c;line-height:1.08}h1{font-size:clamp(2.7rem,10vw,5.2rem);margin:15px 0}h2{font-size:clamp(2rem,7vw,3rem);margin:12px 0 18px}h3{color:#a83e70;margin:20px 0 8px}p{line-height:1.8;margin:10px 0 15px;font-size:1rem}.hero p{max-width:570px}.small{font-size:.86rem;color:#98627b}.pill{border:0;border-radius:999px;padding:13px 22px;background:linear-gradient(135deg,#ff77ad,#e94d91);color:#fff;box-shadow:0 8px 22px #d95c9038;font-weight:700;margin:7px 4px}.pill.secondary{background:#fff;color:#a83e70;border:1px solid #f3b4ce;box-shadow:none}.screen-nav{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:auto;padding-top:22px}.letter{white-space:normal}.letter p{margin-bottom:17px}.photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:14px 0}.photo-slot{min-height:150px;border-radius:18px;border:2px dashed #f0a9c7;background:#fff4f8;display:flex;align-items:center;justify-content:center;text-align:center;padding:10px;overflow:hidden;color:#a75a7c;font-size:.87rem}.photo-slot img{width:100%;height:100%;min-height:150px;object-fit:cover;border-radius:14px}.upload-label{display:block;text-align:center;color:#a83e70;font-size:.9rem;margin:12px 0}.upload-label input{display:block;max-width:100%;width:100%;margin:8px auto}.note{background:#fff1f7;border-radius:15px;padding:13px 15px;font-size:.88rem;line-height:1.6}.mood-buttons{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:10px 0}.mood-buttons button{border:1px solid #f1b3cd;background:#fff;border-radius:999px;padding:10px 13px;color:#a83e70}.mood-buttons button.active{background:#f76fa5;color:#fff;border-color:#f76fa5}.message-box{background:#fff1f7;border-radius:20px;padding:20px;margin:15px 0;line-height:1.8;min-height:95px}.secret{display:none}.secret.show{display:block;animation:appear .6s ease}.music-controls{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:12px 0}audio{width:100%;margin:12px 0}ol{padding-left:1.4rem;line-height:1.8}li{padding-left:3px;margin:5px 0}.question{font-family:Georgia,serif;font-size:clamp(1.4rem,5vw,2rem);color:#b9477c;text-align:center;line-height:1.4;margin:22px 0}.ending-heart{text-align:center;font-size:2.2rem}footer{text-align:center;color:#98627b;font-size:.8rem;padding:10px 4px 2px}
+@media(max-width:480px){main{padding:8px 10px calc(8px + env(safe-area-inset-bottom))}.screen{border-radius:22px;padding:20px 17px}.photo-grid{gap:8px}.photo-slot,.photo-slot img{min-height:125px}.pill{padding:12px 17px}.screen-nav{padding-top:15px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div id="floaties" aria-hidden="true"></div>
+<main>
+<div class="progress" id="progress" aria-live="polite">A little surprise for you 💗</div>
+<section class="screen hero active" data-title="The surprise">
+  <div class="heart">💗</div><div class="eyebrow">a tiny surprise made just for you</div>
+  <h1>A Little<br>Place for Us</h1>
+  <p>For my Deha, Dipsikha 🥹<br>A little corner of the internet made with all my heart.</p>
+  <button class="pill" onclick="showScreen(1)">Open your surprise 💌</button>
+  <p class="small">Made by Partha, just for you · open each chapter with a tap</p>
+</section>
+<section class="screen" data-title="A note from me">
+  <div class="eyebrow">before you go</div><h2>Hey, my Deha… 💗</h2>
+  <div class="letter"><p>Bongali, I created this website just for you because tomorrow you will go to the hostel again, and I want you to know how much I love you.</p></div>
+  <p>Every screen has a little piece of what I wanted to tell you before you leave. Take your time, my Dipsi. ❤️</p>
+  <nav class="screen-nav"><button class="pill secondary" onclick="showScreen(0)">← Back</button><button class="pill" onclick="showScreen(2)">Our story 📖</button></nav>
+</section>
+<section class="screen" data-title="Our story">
+  <div class="eyebrow">chapter one · since 2021</div><h2>Our little story 📖</h2>
+  <div class="letter">
+  <p>I first met you in 2021—the year that taught me what real love feels like. We were both too young to realize it then, but we went through that phase together with so many arguments, beautiful memories, and endless ups and downs.</p>
+  <p>We grew up together, learned what was best for us, and went through drastic changes in our lives. We drifted apart many times, but in the end, we always found our way back to each other. Life taught us hard lessons, and we made big mistakes without knowing where they would lead. But I want you to know that I love you deeply, and I want to spend the rest of my life with you.</p>
+  <p>I am at a stage in life where I truly realize that my days feel incomplete without you. Maybe I could try to move on, but deep down, I will always want you by my side. No matter who came between us or what happened when we were apart, the only thing that matters to me now is living my present with you and building a strong, happy future together.</p>
+  <p>No matter how hard life hits us, I will never leave your side again. You are still my 2021 Dipsi to me. Even when you're 80, in my eyes, you will always be that young Dipsikha from 2021 who made me feel special, taught me so much, and helped me see my mistakes.</p>
+  <p>I love you so much, Dipsi. I can’t bear the pain of losing you ever again. I love you to the moon and back. ❤️</p>
+  </div>
+  <nav class="screen-nav"><button class="pill secondary" onclick="showScreen(1)">← Back</button><button class="pill" onclick="showScreen(3)">Our memories 📸</button></nav>
+</section>
+<section class="screen" data-title="Our memories">
+  <div class="eyebrow">little moments, big feelings</div><h2>Our memories 📸</h2>
+  <p>These spaces are waiting for your favourite photos together. Choose photos below to preview them on this device.</p>
+  <div class="photo-grid">
+    <div class="photo-slot" id="slot1">💗 Photo one<br><span class="small">A favourite memory</span></div>
+    <div class="photo-slot" id="slot2">🥹 Photo two<br><span class="small">A moment you love</span></div>
+    <div class="photo-slot" id="slot3">🌸 Photo three<br><span class="small">A little piece of us</span></div>
+    <div class="photo-slot" id="slot4">💌 Photo four<br><span class="small">Another memory</span></div>
+  </div>
+  <label class="upload-label">Choose photos to preview on your phone<input id="photoPicker" type="file" accept="image/*" multiple></label>
+  <p class="note"><strong>Important:</strong> choosing photos here only previews them on the device you're using. To make them appear for Dipsikha too, the image files must also be uploaded to your GitHub repository and connected to this page.</p>
+  <nav class="screen-nav"><button class="pill secondary" onclick="showScreen(2)">← Our story</button><button class="pill" onclick="showScreen(4)">Before you go 🫂</button></nav>
+</section>
+<section class="screen" data-title="Before you go">
+  <div class="eyebrow">a little promise for the road</div><h2>Before you go to the hostel 🫂</h2>
+  <div class="letter">
+  <p>Before you leave for the hostel, I also want you to know that building a beautiful future is just as important as being together. We both need to build a bright future to make our parents proud (tetiya h tuk mur le dibo nh).</p>
+  <p>We are both young and still learning. We don't fully know what “life” means yet, so it is important for us to study hard to achieve our dreams together, help each other realize our mistakes, and grow side by side. Only then can we truly call ours a beautiful, successful, and healthy relationship.</p>
+  <p>We both have a long way to go in life. We might get caught up in serious problems, and we might face situations where we feel like giving up on each other. But we should go through all those phases together. Loving each other isn't just about romantic talks or meeting every day—it's about how we treat each other at our lowest, right?</p>
+  <p>I want us to remember this whenever we get into arguments. I hope we two young, learning souls reach the best versions of ourselves with each other by our side.</p>
+  </div>
+  <nav class="screen-nav"><button class="pill secondary" onclick="showScreen(3)">← Memories</button><button class="pill" onclick="showScreen(5)">When you miss me 🌙</button></nav>
+</section>
+<section class="screen" data-title="When you miss me">
+  <div class="eyebrow">open whenever you need me</div><h2>When you miss me 🌙</h2>
+  <p>I know we will both miss each other. I just want you to know that whenever you miss me, just know that I am right by your side no matter what. I will wait for you forever. You don't need to worry about what I'm doing, because I'll be too busy missing you just as much as you miss me 😁.</p>
+  <p>And don't forget your main reason for going to the hostel! I will always be there for you, no matter what. I loved you, I love you, and I will forever love you. You don't need to feel alone this time.</p>
+  <div class="mood-buttons" aria-label="Choose a message"><button class="active" onclick="mood(this,'miss')">🥺 I miss you</button><button onclick="mood(this,'hug')">🫂 I need a hug</button><button onclick="mood(this,'sleep')">🌙 Before I sleep</button><button onclick="mood(this,'smile')">🥰 Make me smile</button></div>
+  <div class="message-box" id="moodMessage" aria-live="polite">If you're reading this because you miss me, imagine me giving you the biggest hug. We're apart for now, but you're still someone I carry with me through every day. ❤️</div>
+  <nav class="screen-nav"><button class="pill secondary" onclick="showScreen(4)">← Before you go</button><button class="pill" onclick="showScreen(6)">One more thing 💌</button></nav>
+</section>
+<section class="screen" data-title="A little song">
+  <div class="eyebrow">a little soundtrack for us</div><h2>A song for you 🎶</h2>
+  <p>Choose a romantic audio file if you'd like to listen while reading. Music won't start automatically; tap play when you're ready.</p>
+  <label class="upload-label">Choose an audio file<input id="musicPicker" type="file" accept="audio/*"></label>
+  <audio id="audioPlayer" controls preload="none"></audio>
+  <p class="note">This audio selection plays only on the device where you choose the file. For Dipsikha to hear the same song, upload an audio file you have permission to share and link it in the website, or use a music link she can open herself.</p>
+  <nav class="screen-nav"><button class="pill secondary" onclick="showScreen(5)">← Miss-me messages</button><button class="pill" onclick="showScreen(7)">Read my last letter ❤️</button></nav>
+</section>
+<section class="screen" data-title="My last letter">
+  <div class="eyebrow">and finally…</div><h2>My last letter 💌</h2>
+  <div class="letter">
+  <p>And finally, this is the last paragraph. I think you might be getting bored reading this long, long letter! I’m sorry for that, but these paragraphs aren't enough to describe my love for you. I want you to know that these aren't just words—these are genuine feelings I have for you.</p>
+  <p>We both know we can't live without each other; life just feels hard and difficult when we're apart. With you, I feel like a complete person.</p>
+  <p>One thing I struggle with is having so much fear of losing you again. I know it’s normal, but that fear hits me suddenly, and I get overwhelmed by those thoughts. However, I will try my best to manage and overcome this fear, and I know you will help me through it.</p>
+  <p>I love you completely, and here are a few things I want you to read:</p>
+  <ol>
+    <li>I love the way you smile.</li><li>I love the way you get mad at me over little things.</li><li>I love the way you are.</li><li>I love how truthful you are.</li><li>I love how you yell at me over minor things.</li><li>I love the way you talk.</li><li>I love your voice.</li><li>I love how you act mature or childish at just the right times.</li><li>I love the way you share things with me.</li><li>The most important one: I love your eyes so much, especially that little black spot in your eye that makes them so beautiful 😭😭.</li>
+  </ol>
+  <p>I always want to see a smile in those eyes, not tears. No matter what, I will always stay the same Partha for you.</p>
+  <p>One thing I really dislike is when you don't take care of yourself. You need to be careful with the little things—I hope you get that, right? Good girl.</p>
+  <p>Tomorrow you will be moving away, and I want to tell you one last time that words and paragraphs are never enough to capture how much I love you. I will miss you so much, Dipsikha.</p>
+  <p>That’s all—I am out of words, but never out of feelings. I want to enjoy every little moment of my life with you.</p>
+  </div>
+  <div class="question">Will you always be yourself for me, and will you stay by my side? 💗</div>
+  <div class="center"><button class="pill" onclick="revealFinal()">Tap for one last surprise 💖</button></div>
+  <div class="secret" id="finalSecret"><div class="message-box center"><div class="ending-heart">💗 🥹 💗</div><p><strong>Happy hostel day, my Deha.</strong></p><p>Go learn, grow, laugh, and chase your dreams. I'll be cheering for you. This is not the end of our little moments—just a new chapter. I love you to the moon and back. ❤️</p><p>Forever your Partha.</p></div></div>
+  <nav class="screen-nav"><button class="pill secondary" onclick="showScreen(6)">← Back to the song</button><button class="pill" onclick="showScreen(0)">Read it again ↻</button></nav>
+</section>
+<footer>Made with love, for Dipsikha · one chapter at a time 💗</footer>
+</main>
+<script>
+const screens=[...document.querySelectorAll('.screen')];let current=0;
+function showScreen(n){if(n<0||n>=screens.length)return;screens[current].classList.remove('active');current=n;screens[current].classList.add('active');screens[current].scrollTop=0;document.getElementById('progress').textContent=`Chapter ${n+1} of ${screens.length} · ${screens[n].dataset.title} 💗`;window.scrollTo(0,0)}
+const messages={miss:'If you\'re reading this because you miss me, imagine me giving you the biggest hug. We\'re apart for now, but you\'re still someone I carry with me through every day. ❤️',hug:'Sending you the biggest, warmest hug, my Deha. Take a deep breath, relax your shoulders, and remember you don\'t have to handle every little thing perfectly. I\'m here for you. 🫂',sleep:'Goodnight, my Dipsi. I hope you sleep peacefully and wake up feeling a little lighter. Look after yourself, okay? Somewhere under the same sky, I\'m wishing you sweet dreams. 🌙',smile:'Remember that silly Partha who loves your smile way too much? Yes, that\'s me 😁. Now please smile a little for me—your happiness matters to me, and I hope something lovely happens to you tomorrow. 💗'};
+function mood(btn,key){document.querySelectorAll('.mood-buttons button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');document.getElementById('moodMessage').textContent=messages[key]}
+function revealFinal(){document.getElementById('finalSecret').classList.add('show')}
+const f=document.getElementById('floaties');for(let i=0;i<18;i++){const s=document.createElement('span');s.textContent=['♡','♥','✦','💕'][i%4];s.style.left=(Math.random()*100)+'%';s.style.animationDuration=(8+Math.random()*9)+'s';s.style.animationDelay=(-Math.random()*15)+'s';s.style.fontSize=(12+Math.random()*20)+'px';f.appendChild(s)}
+document.getElementById('photoPicker').addEventListener('change',e=>{const files=[...e.target.files].slice(0,4);files.forEach((file,i)=>{const slot=document.getElementById('slot'+(i+1));const img=document.createElement('img');img.alt='Selected memory '+(i+1);img.src=URL.createObjectURL(file);slot.replaceChildren(img)})});
+document.getElementById('musicPicker').addEventListener('change',e=>{const file=e.target.files[0];if(file){const player=document.getElementById('audioPlayer');player.src=URL.createObjectURL(file);player.load()}});
+</script>
+</body>
+</html>
